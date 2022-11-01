@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "157514864056",
+    "project_id": "isa-app-b9644",
+    "storage_bucket": "isa-app-b9644.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157514864056:android:b08ef51f2f26e4851aab4d",
+        "android_client_info": {
+          "package_name": "com.isa.sch.ly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157514864056-75esn7schlp02ha7ooi3jhjtt3fboekh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARdUjk-htVvfeuXPD-I0Q2SMCPva1AzuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157514864056-75esn7schlp02ha7ooi3jhjtt3fboekh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
