@@ -20,9 +20,9 @@ import java.util.ArrayList;
 
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserHolder>
 {
-    private ArrayList<User> users;
-    private Context context;
-    private  OnUserClickListener onUserClickListener;
+    private final ArrayList<User> users;
+    private final Context context;
+    private final OnUserClickListener onUserClickListener;
 
     public UsersAdapter(ArrayList<User> users, Context context, OnUserClickListener onUserClickListener)
     {

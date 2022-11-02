@@ -71,10 +71,10 @@ public class Signup extends AppCompatActivity
         //Actual signup
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, task ->
         {
+            String userPath = "User/" + FirebaseAuth.getInstance().getCurrentUser().getUid();
             if (task.isSuccessful())
             {
-                FirebaseDatabase.getInstance().getReference("User/" +
-                        FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(new User(username, email, password, ""));
+                FirebaseDatabase.getInstance().getReference(userPath).setValue(new User(username, email, password, ""));
 
                 //jump to login page after signing up
                 startActivity(new Intent(Signup.this, Login.class));

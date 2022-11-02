@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    //Global Variables
     private RecyclerView recyclerView;
     private ArrayList<User> users;
     private ProgressBar progressBar;
@@ -40,11 +40,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //Initializing variables
         progressBar = findViewById(R.id.progress_bar);
         users = new ArrayList<>();
         recyclerView = findViewById(R.id.recycler);
-
         swipeRefreshLayout = findViewById(R.id.swipeLayout);
+
 
         swipeRefreshLayout.setOnRefreshListener(() ->
         {
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         onUserClickListener = position ->
         {
+            startActivity(new Intent(this, MessageActivity.class));
             Toast.makeText(this, "Tapped on user " + users.get(position).getUsername(), Toast.LENGTH_SHORT).show();
         };
 

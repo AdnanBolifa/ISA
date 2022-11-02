@@ -56,8 +56,7 @@ public class Profile extends AppCompatActivity
         btn_logout.setOnClickListener((View v) -> {
 
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(Profile.this, Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |
-                    Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            startActivity(new Intent(Profile.this, Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
         });
 
         imageProfile.setOnClickListener(view ->
