@@ -14,7 +14,7 @@
         android:theme="@style/ISA"
         tools:targetApi="31">
         <activity
-            android:name=".MessageActivity" android:theme="@style/StyleWithoutToolbar"
+            android:name=".MessageActivity"
             android:exported="false" />
         <activity
             android:name=".Profile"
